@@ -1,4 +1,5 @@
 # ConvertToCurrencyFormat
+v1.0
 
 ### تبدیل یک عدد به فرم پولی 
 
