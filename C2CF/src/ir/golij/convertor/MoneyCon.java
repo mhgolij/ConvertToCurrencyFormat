@@ -1,9 +1,10 @@
-package Convertor;
+package ir.golij.convertor;
 
 public class MoneyCon {
     public static final String SIGN = "$";
-    private String sign;
 
+    protected String sign;
+    protected String separator;
     public MoneyCon(){
         this.sign = SIGN;
     }
