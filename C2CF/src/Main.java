@@ -20,6 +20,5 @@ public class Main {
 //-----------------------------
         PMoneyCon g = new PMoneyCon("*","$");
         g.c2Mony(12); //$۱۲*۰
-
     }
 }
