@@ -1,6 +1,9 @@
 # ConvertToCurrencyFormat
 
 ### تبدیل یک عدد به فرم پولی 
+```
+import ir.golij.convertor.*;
+```
 
 > استفاده از روش static :
 ```

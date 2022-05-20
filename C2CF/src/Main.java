@@ -1,5 +1,4 @@
-import ir.golij.convertor.MoneyCon;
-import ir.golij.convertor.PMoneyCon;
+import ir.golij.convertor.*;
 
 public class Main {
     public static void main(String[] args) {
