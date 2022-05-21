@@ -1,9 +1,14 @@
 # ConvertToCurrencyFormat
+v2.0
 
 ### تبدیل یک عدد به فرم پولی 
+<<<<<<< HEAD
 ```
 import ir.golij.convertor.*;
 ```
+=======
+در همه متدهای زیر ورودی میتواند سه نوع صحیح، اعشار و رشته ای باشد
+>>>>>>> Update-Readme
 
 > استفاده از روش static :
 ```
