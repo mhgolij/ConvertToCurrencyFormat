@@ -1,23 +1,27 @@
-import ir.golij.convertor.*;
+import ir.golij.cf.english.MoneyCon;
+import ir.golij.cf.persian.PMoneyCon;
 
 public class Main {
     public static void main(String[] args) {
-        MoneyCon.cMony(15); // $15.0
-        MoneyCon.cMony(15,"ریال"); //ریال15.0
+        MoneyCon.cMoney(15);
+        MoneyCon.cMoney(15,"ریال");
+        MoneyCon.cMoney(15,"ریال","/");
         MoneyCon d = new MoneyCon();
-        d.c2Mony(12); //12.0 $
+        d.c2Mony(12);
         MoneyCon c = new MoneyCon("RIAL");
-        c.c2Mony(12); //RIAL12.0
-        PMoneyCon.cMony(15); //﷼۱۵/۰
-        PMoneyCon.cMony(15,"."); //﷼۱۵.۰
-        PMoneyCon.cMony(15,".","$"); //$۱۵.۰
+        c.c2Mony(12);
+        MoneyCon e = new MoneyCon("RIAL","/");
+        e.c2Mony(12);
+        PMoneyCon.cMoney(15);
+        PMoneyCon.cMoney(15,"$");
+        PMoneyCon.cMoney(15,"$","/");
         PMoneyCon a = new PMoneyCon();
-        a.c2Mony(12); //﷼۱۲/۰
+        a.c2Mony(12);
 //-----------------------------
-        PMoneyCon f = new PMoneyCon("*");
-        f.c2Mony(12); //﷼۱۲*۰
+        PMoneyCon f = new PMoneyCon("$");
+        f.c2Mony(12);
 //-----------------------------
-        PMoneyCon g = new PMoneyCon("*","$");
-        g.c2Mony("12"); //$۱۲*۰
+        PMoneyCon g = new PMoneyCon("$","*");
+        g.c2Mony("12");
     }
 }
